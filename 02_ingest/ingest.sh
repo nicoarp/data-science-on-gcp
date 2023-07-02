@@ -8,7 +8,7 @@ fi
 export BUCKET=$1
 
 # get zip files from BTS, extract csv files
-for YEAR in `seq 2015 2015`; do
+for YEAR in `seq 2015 2017`; do
    for MONTH in `seq 1 12`; do
       bash download.sh $YEAR $MONTH
       # upload the raw CSV files to our GCS bucket
