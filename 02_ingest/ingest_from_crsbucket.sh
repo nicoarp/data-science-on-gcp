@@ -13,7 +13,7 @@ CMD="gsutil -m cp "
 for MONTH in `seq -w 1 12`; do
   CMD="$CMD ${FROM}/2015${MONTH}.csv"
 done
-CMD="$CMD ${FROM}/2017.csv $TO"
+CMD="$CMD ${FROM}/201702.csv $TO"
 
 echo $CMD
 $CMD
